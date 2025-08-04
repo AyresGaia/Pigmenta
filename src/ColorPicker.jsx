@@ -11,6 +11,11 @@ function ColorPicker(){
 
     return(
         <body style={{backgroundColor: color}} onChange={ColorChanger}>
+
+        <header>
+        <h1>Pigmenta 🎨</h1>
+        <p>Unleash the power of color magic</p>
+        </header>
             
         <div className="color-picker-container">
             <h1>Color Picker</h1>
@@ -20,6 +25,7 @@ function ColorPicker(){
             <label >Select a Color:</label>
             <input type="color" value={color} onChange={ColorChanger}/>
         </div>
+        <footer>Made with 💜 by Archduke</footer>
         </body>
     )
 }
